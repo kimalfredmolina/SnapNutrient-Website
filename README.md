@@ -60,3 +60,37 @@ export default {
 ```css
 @import "tailwindcss";
 ```
+
+---
+
+# Git sheet
+
+### Branch Management
+```bash
+git branch                    # To check all branches
+git checkout branch_name      # To move to another branch
+git checkout -b new_branch    # To Create ne branch
+```
+
+### Status & Updates
+```bash
+git status      # To check the file changes
+git pull        # To get the latest git commit
+git pull origin branch_name   # To get the latest git commit in speciic branch
+```
+
+### Add, Commit, Push
+```bash
+git add .                       # To stage the all changes
+git commit -m "message here"    # To create committ message
+git push origin branch_name     # Push to remote repo (GitHub)
+```
+
+
+### Merge Workflow
+```bash
+git checkout master
+git pull origin master          # To ensure the master is updated
+git merge home_page          # Merge feature branch in master
+git push origin master          # Push updated master in GitHub
+```
