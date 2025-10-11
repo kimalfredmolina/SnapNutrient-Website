@@ -13,6 +13,9 @@ This study highlights the development and implementation of SnapNutrient, focusi
 
 ## Frontend Installation Guide (React JS)
 
+### Important Installations
+
+- 🛠️ NodeJs ([Install here if you dont have](https://nodejs.org/en/download))
 
 ### 1.0. ReactJS Installation
 
@@ -62,6 +65,38 @@ export default {
 ```
 
 ---
+## Other FrontEnd Installation & Free Soure Codes :notebook_with_decorative_cover:
+
+- It allows to navigate between different components and manage the browser history.
+```
+npm install react-router-dom
+```
+- Free React.js Icons
+https://lucide.dev/guide/packages/lucide-react
+
+```
+npm install lucide-react
+```
+
+- For Animation in React.js
+https://www.framer.com/motion/introduction/
+
+```
+npm install framer-motion
+```
+
+Free React Templates
+
+- https://ui.shadcn.com/
+
+Free Background for Website (Tailwind CSS, Vanilla CSS)
+
+- https://bg.ibelick.com/
+
+Free Buttons for Website (Tailwind CSS)
+
+- https://buttons.ibelick.com/
+---
 
 # Git sheet
 
@@ -91,6 +126,6 @@ git push origin branch_name     # Push to remote repo (GitHub)
 ```bash
 git checkout master
 git pull origin master          # To ensure the master is updated
-git merge home_page          # Merge feature branch in master
+git merge home_page             # Merge feature branch in master
 git push origin master          # Push updated master in GitHub
 ```
