@@ -20,8 +20,8 @@ const Navbar = () => {
             </a>
           </div>
           <div className="hidden md:flex flex-1 justify-center items-center space-x-8 lg:space-x-12 text-lg lg:text-2xl">
-            <a href="#home" className="hover:text-cyan-300 font-bold duration-300">Home</a>
-            <a href="#about" className="hover:text-cyan-300 font-bold duration-300">Features</a>
+            <a href="#home_page" className="hover:text-cyan-300 font-bold duration-300">Home</a>
+            <a href="#feature_page" className="hover:text-cyan-300 font-bold duration-300">Features</a>
             <a href="#skills" className="hover:text-cyan-300 font-bold duration-300">About</a>
             <a href="#exp" className="hover:text-cyan-300 font-bold duration-300">Contact</a>
           </div>
