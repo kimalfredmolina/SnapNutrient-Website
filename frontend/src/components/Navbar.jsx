@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="hidden md:flex flex-1 justify-center items-center space-x-8 lg:space-x-12 text-lg lg:text-2xl">
             <a href="#home_page" className="hover:text-cyan-300 font-bold duration-300">Home</a>
             <a href="#feature_page" className="hover:text-cyan-300 font-bold duration-300">Features</a>
-            <a href="#skills" className="hover:text-cyan-300 font-bold duration-300">About</a>
+            <a href="#about_page" className="hover:text-cyan-300 font-bold duration-300">About</a>
             <a href="#exp" className="hover:text-cyan-300 font-bold duration-300">Contact</a>
           </div>
           <div className="md:hidden flex items-center">
@@ -41,9 +41,9 @@ const Navbar = () => {
           transition={{ duration: 0.3 }}
           className="md:hidden bg-gray-800 text-green-500 text-lg absolute w-full left-0 top-20 z-40 shadow-lg">
           <div className="flex flex-col items-center py-4 space-y-4">
-            <a href="#home" onClick={toggleNav} className="hover:text-cyan-300 font-bold duration-300">Home</a>
-            <a href="#about" onClick={toggleNav} className="hover:text-cyan-300 font-bold duration-300">Features</a>
-            <a href="#skills" onClick={toggleNav} className="hover:text-cyan-300 font-bold duration-300">About</a>
+            <a href="#home_page" onClick={toggleNav} className="hover:text-cyan-300 font-bold duration-300">Home</a>
+            <a href="#feature_page" onClick={toggleNav} className="hover:text-cyan-300 font-bold duration-300">Features</a>
+            <a href="#about_page" onClick={toggleNav} className="hover:text-cyan-300 font-bold duration-300">About</a>
             <a href="#exp" onClick={toggleNav} className="hover:text-cyan-300 font-bold duration-300">Contact</a>
           </div>
         </motion.div>

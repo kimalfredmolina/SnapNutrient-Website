@@ -1,3 +1,4 @@
+import AboutPage from './components/AboutPage'
 import FeaturePage from './components/FeaturePage'
 import HomePage from './components/HomePage'
 import Navbar from './components/Navbar'
@@ -16,6 +17,10 @@ const App = () => {
           <div id='feature_page'>
             <FeaturePage />
           </div>
+          <div id='about_page'>
+            <AboutPage />
+          </div>
+
 
        </div>
 
