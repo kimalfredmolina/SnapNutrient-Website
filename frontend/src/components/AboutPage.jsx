@@ -38,7 +38,6 @@ const AboutPage = () => {
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        viewport={{ once: true }}
         className="text-center mb-20"
       >
         <h2 className="text-5xl md:text-6xl font-extrabold text-emerald-500 mb-6">
@@ -55,7 +54,6 @@ const AboutPage = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
-        viewport={{ once: true }}
         className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-24 max-w-6xl mx-auto"
       >
         {stats.map((stat, index) => (
@@ -82,7 +80,6 @@ const AboutPage = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        viewport={{ once: true }}
         className="mb-24 max-w-4xl mx-auto"
       >
         <div className="bg-slate-800/50 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-slate-700/50 shadow-2xl">
@@ -114,7 +111,6 @@ const AboutPage = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        viewport={{ once: true }}
         className="mb-24"
       >
         <h3 className="text-4xl md:text-5xl font-extrabold text-center text-emerald-500 mb-12">
@@ -127,7 +123,7 @@ const AboutPage = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true }}
+    
               whileHover={{ scale: 1.03 }}
               className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-emerald-500/50 transition-all duration-300 shadow-lg hover:shadow-emerald-500/20 group"
             >
@@ -152,7 +148,6 @@ const AboutPage = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        viewport={{ once: true }}
         className="text-center max-w-4xl mx-auto"
       >
         <div className="bg-gradient-to-br from-emerald-500/10 to-cyan-500/10 rounded-3xl p-12 border border-emerald-500/20 shadow-2xl">

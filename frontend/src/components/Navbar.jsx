@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full text-emerald-500 z-50 font-poppins bg-transparent">
+    <div className="fixed top-0 left-0 w-full text-emerald-900 z-50 font-poppins bg-transparent">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
@@ -20,10 +20,10 @@ const Navbar = () => {
             </a>
           </div>
           <div className="hidden md:flex flex-1 justify-center items-center space-x-8 lg:space-x-12 text-lg lg:text-2xl">
-            <a href="#home_page" className="hover:text-cyan-300 font-bold duration-300">Home</a>
-            <a href="#feature_page" className="hover:text-cyan-300 font-bold duration-300">Features</a>
-            <a href="#about_page" className="hover:text-cyan-300 font-bold duration-300">About</a>
-            <a href="#exp" className="hover:text-cyan-300 font-bold duration-300">Contact</a>
+            <a href="#home_page" className="hover:text-emerald-200 font-bold duration-300">Home</a>
+            <a href="#feature_page" className="hover:text-emerald-200 font-bold duration-300">Features</a>
+            <a href="#about_page" className="hover:text-emerald-200 font-bold duration-300">About</a>
+            <a href="#contact_page" className="hover:text-emerald-200 font-bold duration-300">Contact</a>
           </div>
           <div className="md:hidden flex items-center">
             <button onClick={toggleNav} className="focus:outline-none">
@@ -41,10 +41,10 @@ const Navbar = () => {
           transition={{ duration: 0.3 }}
           className="md:hidden bg-gray-800 text-green-500 text-lg absolute w-full left-0 top-20 z-40 shadow-lg">
           <div className="flex flex-col items-center py-4 space-y-4">
-            <a href="#home_page" onClick={toggleNav} className="hover:text-cyan-300 font-bold duration-300">Home</a>
-            <a href="#feature_page" onClick={toggleNav} className="hover:text-cyan-300 font-bold duration-300">Features</a>
-            <a href="#about_page" onClick={toggleNav} className="hover:text-cyan-300 font-bold duration-300">About</a>
-            <a href="#exp" onClick={toggleNav} className="hover:text-cyan-300 font-bold duration-300">Contact</a>
+            <a href="#home_page" onClick={toggleNav} className="hover:text-emerald-300 font-bold duration-300">Home</a>
+            <a href="#feature_page" onClick={toggleNav} className="hover:text-emerald-300 font-bold duration-300">Features</a>
+            <a href="#about_page" onClick={toggleNav} className="hover:text-emerald-300 font-bold duration-300">About</a>
+            <a href="#contact_page" onClick={toggleNav} className="hover:text-emerald-300 font-bold duration-300">Contact</a>
           </div>
         </motion.div>
       )}
