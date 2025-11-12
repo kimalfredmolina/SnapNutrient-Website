@@ -23,6 +23,7 @@ const Navbar = () => {
             <a href="#home_page" className="hover:text-emerald-200 font-bold duration-300">Home</a>
             <a href="#feature_page" className="hover:text-emerald-200 font-bold duration-300">Features</a>
             <a href="#about_page" className="hover:text-emerald-200 font-bold duration-300">About</a>
+            <a href="#faqs_page" className="hover:text-emerald-200 font-bold duration-300">FAQs</a>
             <a href="#contact_page" className="hover:text-emerald-200 font-bold duration-300">Contact</a>
           </div>
           <div className="md:hidden flex items-center">
@@ -44,6 +45,7 @@ const Navbar = () => {
             <a href="#home_page" onClick={toggleNav} className="hover:text-emerald-300 font-bold duration-300">Home</a>
             <a href="#feature_page" onClick={toggleNav} className="hover:text-emerald-300 font-bold duration-300">Features</a>
             <a href="#about_page" onClick={toggleNav} className="hover:text-emerald-300 font-bold duration-300">About</a>
+            <a href="#faqs_page" onClick={toggleNav} className="hover:text-emerald-300 font-bold duration-300">FAQs</a>
             <a href="#contact_page" onClick={toggleNav} className="hover:text-emerald-300 font-bold duration-300">Contact</a>
           </div>
         </motion.div>

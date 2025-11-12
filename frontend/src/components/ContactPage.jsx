@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Phone, Send, MessageSquare, Clock, CheckCircle } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, MessageSquare, Clock, CheckCircle, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -15,28 +15,28 @@ const ContactPage = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us",
-      content: "support@snapnutrient.com",
-      link: "mailto:support@snapnutrient.com",
+      content: "snapnutrientapp@gmail.com",
+      link: "mailto:snapnutrientapp@gmail.com",
       gradient: "from-emerald-500 to-teal-500"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Call Us",
-      content: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      content: "+63 09123718217",
+      link: "tel:+63 09123718217",
       gradient: "from-cyan-500 to-blue-500"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Visit Us",
-      content: "123 Fitness Ave, Health City, HC 12345",
+      content: "Taguig City, Metro Manila, Philippines",
       link: "#",
       gradient: "from-teal-500 to-emerald-500"
     },
     {
       icon: <Clock className="w-6 h-6" />,
       title: "Working Hours",
-      content: "Mon - Fri: 9:00 AM - 6:00 PM",
+      content: "Mon - Fri: 9:00 AM - 6:00 PM GMT+8",
       link: "#",
       gradient: "from-blue-500 to-cyan-500"
     }
@@ -160,7 +160,7 @@ const ContactPage = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all duration-300"
-                      placeholder="John Doe"
+                      placeholder="Your Name"
                     />
                   </div>
                   <div>
@@ -174,7 +174,7 @@ const ContactPage = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all duration-300"
-                      placeholder="john@example.com"
+                      placeholder="youremail@example.com"
                     />
                   </div>
                 </div>
@@ -248,36 +248,46 @@ const ContactPage = () => {
               <div>
                 <h4 className="text-emerald-400 font-semibold mb-2">Support Available</h4>
                 <p className="text-slate-400 text-sm">
-                  Our support team is available Monday through Friday, 9 AM - 6 PM EST.
+                  Our support team is available Monday through Friday, 9 AM - 6 PM GMT+8.
                 </p>
               </div>
               <div>
                 <h4 className="text-emerald-400 font-semibold mb-2">Emergency Support</h4>
                 <p className="text-slate-400 text-sm">
-                  For urgent issues, please call our hotline at +1 (555) 999-8888.
+                  For urgent issues, please call our hotline at +63 09123718217.
                 </p>
               </div>
             </div>
           </div>
 
           {/* Social Media Box */}
-          <div className="bg-gradient-to-br from-emerald-500/10 to-cyan-500/10 rounded-3xl p-8 border border-emerald-500/20 shadow-2xl">
-            <h3 className="text-2xl font-bold text-white mb-4">Connect With Us</h3>
-            <p className="text-slate-400 mb-6 text-sm">
-              Follow us on social media for tips, updates, and community support.
-            </p>
-            <div className="flex gap-4">
-              {['Facebook', 'Twitter', 'Instagram', 'LinkedIn'].map((social, index) => (
-                <motion.button
-                  key={index}
-                  whileHover={{ scale: 1.1, y: -2 }}
-                  className="w-12 h-12 rounded-xl bg-slate-800 hover:bg-emerald-500 border border-slate-700 hover:border-emerald-400 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-300"
-                >
-                  <span className="text-xs font-bold">{social[0]}</span>
-                </motion.button>
-              ))}
+            <div className="bg-gradient-to-br from-emerald-500/10 to-cyan-500/10 rounded-3xl p-8 border border-emerald-500/20 shadow-2xl">
+              <h3 className="text-2xl font-bold text-white mb-4">Connect With Us</h3>
+              <p className="text-slate-400 mb-6 text-sm">
+                Follow us on social media for tips, updates, and community support.
+              </p>
+              <div className="flex gap-4">
+                {[
+                  { icon: <Facebook className="w-5 h-5" />, href: 'https://facebook.com/yourpage', label: 'Facebook' },
+                  { icon: <Twitter className="w-5 h-5" />, href: 'https://twitter.com/yourpage', label: 'Twitter' },
+                  { icon: <Instagram className="w-5 h-5" />, href: 'https://instagram.com/yourpage', label: 'Instagram' },
+                  { icon: <Linkedin className="w-5 h-5" />, href: 'https://linkedin.com/in/yourprofile', label: 'LinkedIn' },
+                  { icon: <Send className="w-5 h-5" />, href: 'https://t.me/+8TwEgfD5V-RmZDc9', label: 'Telegram' },
+                ].map((social, index) => (
+                  <motion.a
+                    key={index}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    className="w-12 h-12 rounded-xl bg-slate-800 hover:bg-emerald-500 border border-slate-700 hover:border-emerald-400 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-300"
+                  >
+                    {social.icon}
+                  </motion.a>
+                ))}
+              </div>
             </div>
-          </div>
         </motion.div>
       </div>
     </div>
