@@ -83,8 +83,8 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 { name: 'Privacy Policy', href: '/privacy-policy', internal: true },
-                { name: 'Terms of Service', href: '#terms', internal: false },
-                { name: 'About Developers', href: '#dev', internal: false },
+                { name: 'Terms of Service', href: '/terms', internal: false },
+                { name: 'About Developers', href: '/devs', internal: false },
                 { name: 'Install APK', href: 'https://t.me/+8TwEgfD5V-RmZDc9', internal: false },
               ].map((link, index) => (
                 <li key={index}>

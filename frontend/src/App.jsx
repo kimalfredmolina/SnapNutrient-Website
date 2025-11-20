@@ -7,6 +7,8 @@ import ContactPage from './components/ContactPage'
 import FAQsPage from './components/FAQs'
 import Footer from './components/Footer'
 import PrivacyPolicy from './components/resources/Privacy'
+import Terms from './components/resources/Terms'
+import Developers from './components/resources/Developers'
 
 const App = () => {
   const location = useLocation();
@@ -33,6 +35,8 @@ const App = () => {
             </>
           } />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/devs" element={<Developers />} />
         </Routes>
         {showNavbar && <Footer />}
       </div>
